@@ -7,27 +7,33 @@
 .filter {
   width: 100%;
   height: 100%;
-  background-color: #48e4e4cc;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   transition: all 0.5s;
 }
-.filter:hover {
-  background-color: transparent;
-}
 
-.filter1 {
+.photo-filter {
   width: 100%;
   height: 100%;
-  background-color: #023047cb;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   transition: all 0.5s;
 }
+
+.bg {
+  background-size: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .nav-bar {
   color: white;
   display: flex;
@@ -114,6 +120,19 @@
 #project1 {
   background-size: cover;
 }
+#project1 .bg {
+  background-image: url("./images/project1.jpg");
+}
+#project1 .photo-filter {
+  background-color: #023047b2;
+}
+#project1 .filter {
+  background-color: #48e4e4dc;
+}
+#project1 .filter:hover {
+  background-color: transparent;
+}
+
 .photo-left {
   position: relative;
   width: 40vw;
@@ -129,17 +148,6 @@
 .photo-left hr,
 .photo-left p {
   z-index: 1;
-}
-
-#bg1 {
-  background-image: url("./template/t1.png");
-  background-size: cover;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .photo-left h2 {
@@ -172,30 +180,6 @@
 
 .photo-right p {
   font-size: 0.8em;
-}
-
-/* #project1 {
-  background-color: rgb(47, 182, 228);
-} */
-
-#project2 {
-  background-color: rgb(26, 60, 133);
-}
-
-#project3 {
-  background-color: rgb(247, 110, 217);
-}
-
-#project4 {
-  background-color: rgb(240, 238, 116);
-}
-
-#project5 {
-  background-color: rgb(6, 134, 177);
-}
-
-#project6 {
-  background-color: rgb(98, 245, 84);
 }
 
 .trailer {
