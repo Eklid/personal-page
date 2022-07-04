@@ -7,27 +7,33 @@
 .filter {
   width: 100%;
   height: 100%;
-  background-color: #48e4e4cc;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   transition: all 0.5s;
 }
-.filter:hover {
-  background-color: transparent;
-}
 
-.filter1 {
+.photo-filter {
   width: 100%;
   height: 100%;
-  background-color: #023047cb;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   transition: all 0.5s;
 }
+
+.bg {
+  background-size: cover;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .nav-bar {
   color: white;
   display: flex;
@@ -114,6 +120,99 @@
 #project1 {
   background-size: cover;
 }
+#project1 .bg {
+  background-image: url("./images/project1.jpg");
+}
+#project1 .photo-filter {
+  background-color: #023047b2;
+}
+#project1 .filter {
+  background-color: #48c5e4c5;
+}
+#project1 .filter:hover {
+  background-color: transparent;
+}
+
+#project2 {
+  background-size: cover;
+}
+#project2 .bg {
+  background-image: url("./images/project2.jpg");
+}
+#project2 .photo-filter {
+  background-color: #023047b2;
+}
+#project2 .filter {
+  background-color: #d985fac5;
+}
+#project2 .filter:hover {
+  background-color: transparent;
+}
+
+#project3 {
+  background-size: cover;
+}
+#project3 .bg {
+  background-image: url("./images/project3.jpg");
+}
+#project3 .photo-filter {
+  background-color: #023047b2;
+}
+#project3 .filter {
+  background-color: #fd9474be;
+}
+#project3 .filter:hover {
+  background-color: transparent;
+}
+
+#project4 {
+  background-size: cover;
+}
+#project4 .bg {
+  background-image: url("./images/project4.jpg");
+}
+#project4 .photo-filter {
+  background-color: #023047b2;
+}
+#project4 .filter {
+  background-color: #fac07ebe;
+}
+#project4 .filter:hover {
+  background-color: transparent;
+}
+
+#project5 {
+  background-size: cover;
+}
+#project5 .bg {
+  background-image: url("./images/comingsoon/SL_030420_28660_03.jpg");
+}
+#project5 .photo-filter {
+  background-color: #023047b2;
+}
+#project5 .filter {
+  background-color: #7ebefabe;
+}
+#project5 .filter:hover {
+  background-color: transparent;
+}
+
+#project6 {
+  background-size: cover;
+}
+#project6 .bg {
+  background-image: url("./images/comingsoon/SL_030420_28660_03.jpg");
+}
+#project6 .photo-filter {
+  background-color: #023047b2;
+}
+#project6 .filter {
+  background-color: #7efab6be;
+}
+#project6 .filter:hover {
+  background-color: transparent;
+}
+
 .photo-left {
   position: relative;
   width: 40vw;
@@ -127,19 +226,11 @@
 }
 .photo-left h2,
 .photo-left hr,
-.photo-left p {
+.photo-left p,
+.photo-right h2,
+.photo-right hr,
+.photo-right p {
   z-index: 1;
-}
-
-#bg1 {
-  background-image: url("./template/t1.png");
-  background-size: cover;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .photo-left h2 {
@@ -164,6 +255,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .photo-right h2 {
@@ -172,30 +264,6 @@
 
 .photo-right p {
   font-size: 0.8em;
-}
-
-/* #project1 {
-  background-color: rgb(47, 182, 228);
-} */
-
-#project2 {
-  background-color: rgb(26, 60, 133);
-}
-
-#project3 {
-  background-color: rgb(247, 110, 217);
-}
-
-#project4 {
-  background-color: rgb(240, 238, 116);
-}
-
-#project5 {
-  background-color: rgb(6, 134, 177);
-}
-
-#project6 {
-  background-color: rgb(98, 245, 84);
 }
 
 .trailer {
@@ -247,6 +315,7 @@
   padding: 5em 3em;
   background-color: #023047;
   color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .info {
@@ -356,4 +425,26 @@ textarea:focus {
   background-color: white;
   color: #023047;
   padding: 0.8em;
+}
+
+.footer {
+  height: 35vh;
+  padding: 3em;
+  background-color: #023047;
+}
+
+.footer-icon {
+  border-radius: 50%;
+  background-color: white;
+  color: #023047;
+  padding: 0.8em;
+  margin: 0.6em;
+}
+.footer-icon:hover {
+  background-color: #48e4e4;
+}
+.footer p {
+  padding-top: 2em;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 1em;
 }
